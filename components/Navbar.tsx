@@ -4,27 +4,6 @@ import s from "@/styles/navbar.module.css"
 
 export default function Navbar(){
 
-    const [overTrigger, setOverTrigger] = useState(false) // checks if cursor is over trigger link
-    const [visible, setVisible] = useState(false) // checks if submenu is visible
-
-    function handleSubMenuTrigger(e){
-        if(e.type == "mouseenter"){
-            setOverTrigger(true)
-        } else if(e.type == "mouseleave"){
-            setOverTrigger(false)
-        }
-    }
-
-    useEffect(()=>{
-        if(overTrigger){
-            setVisible(true)
-        }
-        if(!overTrigger){
-            setVisible(false)
-        }
-    },[overTrigger])
-
-
     return(
         <nav className ={s.nav}>
             <div className={s.linkContainer}>
