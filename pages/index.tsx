@@ -1,5 +1,5 @@
-import Header from "@/components/Header.tsx"
-import BookTeaser from "@/components/BookTeaser.tsx"
+import Header from "@/components/Header"
+import BookTeaser from "@/components/BookTeaser"
 import Image from "next/image"
 import s from "@/styles/Home.module.css"
 
