@@ -1,0 +1,55 @@
+.details{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.details p{
+    position: relative;
+    width: 100%;
+    padding: 0 0 0.25rem 0;
+}
+
+.copyright{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+    text-align: center;
+}
+
+.copyright p{
+    position: relative;
+    width: 100%;
+    padding: 0 0 0.25rem 0;
+}
+
+.copyright p:last-child{
+    margin: 2rem 0 0 0;
+}
+
+.menu{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+    text-align: right;
+}
+
+.link{
+    position: relative;
+    text-decoration: none;
+    color: black;
+    width: 100%;
+    padding: 0 0 0.25rem 0;
+}
