@@ -40,3 +40,7 @@ body {
   align-items: flex-start;
   flex-wrap: wrap;
 }
+
+p{
+  margin: 0;
+}

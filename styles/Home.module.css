@@ -9,5 +9,31 @@
   position: relative;
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 2rem;
+  padding: 2rem 0 2rem 0;
+  border-bottom: 2px solid red;
+}
+
+.front{
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1/0.335;
+  background-image: url("/frohburg.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 2rem 0 2rem 0;
+  border: 2px solid black;
+  box-shadow: 5px 5px 0px -1px black;
+}
+
+.front p{
+  font-size: 10vw;
+  color: rgba(255,255,255,1);
+  text-shadow: 5px 5px black;
 }

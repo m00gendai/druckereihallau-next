@@ -1,4 +1,5 @@
 import Header from "@/components/Header.tsx"
+import BookTeaser from "@/components/BookTeaser.tsx"
 import Image from "next/image"
 import s from "@/styles/Home.module.css"
 
@@ -14,12 +15,19 @@ export default function Home() {
             Die Druckerei ist spezialisiert auf kleine bis mittlere Auflagen von Drucksachen aller Art.<br/>
             Dank Digitaldrucktechnik können alle Drucksachen zu günstigen Konditionen und in kürzester Zeit hergestellt werden – auch in Kleinstauflagen.
           </p>
+          <br/>
           <p>
             Die Druckerei bietet auch Eigenkreationen an:<br/>
             Interessante und spannende Bücher über Hallau, Postkarten und Notizblöckli, nostalgische Schulhefte, witzige Büchlein, Kleber und allerlei Karten.
           </p>
         </article>
         <section className={s.books}>
+          <BookTeaser book={"hallau"} />
+          <BookTeaser book={"gass"} />
+          <BookTeaser book={"alltaegliches"} />
+        </section>
+        <section className={s.front}>
+          <p>Druckerei Hallau</p>
         </section>
       </main>
     </>
