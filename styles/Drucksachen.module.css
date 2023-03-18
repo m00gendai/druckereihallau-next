@@ -1,0 +1,35 @@
+.container{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 2rem 0 2rem 0;
+    margin: 0 0 2rem 0;
+    border-bottom: 2px solid red;
+}
+
+.container:last-child{
+    margin: 0;
+    border: none;
+}
+
+.container ul{
+    margin: 0;
+    padding: 0;
+}
+
+.container ul li{
+    margin: 0 0 0 1rem;
+}
+
+.image{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 50%;
+    aspect-ratio: 16/9;
+    box-shadow: 5px 5px 0px 0px black;
+    border: 2px solid black;
+}
