@@ -5,7 +5,7 @@ export default function BookTeaser({book} :{book: string}){
         <div className={s.container}>
             <div className={s.thumb} style={{backgroundImage: `url("/buch_${book}.jpg")`}}>
             </div>
-            <button className={s.button}>
+            <button className="button">
                 {
                     book === "hallau" ? "Hallau" 
                     : book === "gass" ? "Hallauer Gässlibuch" 
