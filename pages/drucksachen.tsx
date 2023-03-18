@@ -65,7 +65,7 @@ export default function Drucksachen(){
           <div className={s.container}>
           <ul>
             {drucksachen.map((item, index)=>{
-              return <li key={`li_print_${index}`>{`${index === drucksachen.length-1 ? "...und" : ""} ${item}`}</li>
+              return <li key={`li_print_${index}`}>{`${index === drucksachen.length-1 ? "...und" : ""} ${item}`}</li>
             })}
           </ul>
           <div className={s.image} style={{backgroundImage: `url("/drucksachen.jpg")`}}></div>
@@ -83,7 +83,7 @@ export default function Drucksachen(){
               <div className={s.container}>
               <ul>
                 {skills.map((item, index)=>{
-              return <li key={`li_skills_${index}`>{`${index === skills.length-1 ? "...und" : ""} ${item}`}</li>
+              return <li key={`li_skills_${index}`}>{`${index === skills.length-1 ? "...und" : ""} ${item}`}</li>
             })}
             </ul>
             <div className={s.image} style={{backgroundImage: `url("/ringbinder.jpg")`}}></div>
@@ -93,7 +93,7 @@ export default function Drucksachen(){
             <div className={s.container}>
             <ul>
                 {grief.map((item, index)=>{
-              return <li key={`li_grief_${index}`>{`${index === grief.length-1 ? "...und" : ""} ${item}`}</li>
+              return <li key={`li_grief_${index}`}>{`${index === grief.length-1 ? "...und" : ""} ${item}`}</li>
             })}
             </ul>
             <div className={s.image} style={{backgroundImage: `url("/grief.jpg")`}}></div>
