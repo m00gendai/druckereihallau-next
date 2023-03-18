@@ -41,7 +41,28 @@ body {
   flex-wrap: wrap;
 }
 
+.section{
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 2rem 0 2rem 0;
+}
+
+.article{
+  position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 2rem 0 2rem 0;
+}
+
 p{
+  width: 100%;
   margin: 0;
 }
 
@@ -52,4 +73,28 @@ footer{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   border-top: 2px solid red;
+}
+
+.button {
+  position: relative;
+  width: 100%;
+  margin: 0 0 2rem 0;
+  padding: 1rem;
+  border: none;
+  outline: none;
+  background: red;
+  font-size: 1.25rem;
+  color: white;
+  border: 2px solid black;
+  box-shadow: 5px 5px 0px -1px black;
+  text-decoration: none;
+}
+
+.button:hover{
+  cursor: pointer;
+}
+
+.button:active {
+  transform: translate(3px, 3px);
+  box-shadow: 2px 2px 0px 0px black;
 }
