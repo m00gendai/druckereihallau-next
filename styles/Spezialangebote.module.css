@@ -1,0 +1,44 @@
+.containerGrid{
+    position: relative;
+    width: 100%;
+    padding: 2rem 0 0 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 2rem;
+}
+
+.image{
+    width: 100%;
+    aspect-ratio: 1/0.708;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 5px 5px 0px 0px black;
+    border: 2px solid black;
+}
+
+.containerSingle{
+    position: relative;
+    width: 100%;
+    padding: 2rem 0 2rem 0;
+    margin: 0 0 0 0;
+    border-bottom: 2px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerSingle:last-child{
+    border: none;
+}
+
+.imageSingle{
+    position: relative;
+    width: 100%;
+    aspect-ratio: 21/9;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 5px 5px 0px 0px black;
+    border: 2px solid black;
+}
