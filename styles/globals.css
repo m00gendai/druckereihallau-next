@@ -66,6 +66,12 @@ p{
   margin: 0;
 }
 
+h1{
+  width: 100%;
+  margin: 0 0 1rem 0;
+  font-size: 2rem;
+}
+
 footer{
   padding: 2rem;
   position: relative;
