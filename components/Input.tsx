@@ -35,7 +35,7 @@ export default function Input({
   setFocus,
   setFormValid,
 }: inputProps) {
-  const hasFocus: boolean = focus[tag];
+  const hasFocus: boolean = focus.tag;
 
   return (
     <div className={s.containerInput}>
