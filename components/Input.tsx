@@ -4,7 +4,6 @@ interface inputProps {
   tag: string;
   type: string;
   content: string;
-  pattern: string;
   formValue: {
     name: string;
     mail: string;
@@ -29,7 +28,6 @@ export default function Input({
   tag,
   type,
   content,
-  pattern,
   formValue,
   focus,
   formValid,
@@ -64,7 +62,6 @@ export default function Input({
         type={`${type}`}
         placeholder=""
         required={content[content.length - 1] === "*" ? true : false}
-        pattern={pattern === undefined ? null : `${pattern}`}
         onFocus={(event) =>
           setFocus({
             ...focus,
