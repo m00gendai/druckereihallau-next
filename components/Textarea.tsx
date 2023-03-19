@@ -4,14 +4,10 @@ interface textareaProps {
   tag: string;
   content: string;
   formValue: {
-    name: string;
-    mail: string;
-    message: string;
+    [key: string]: string;
   };
   focus: {
-    name: boolean;
-    mail: boolean;
-    message: boolean;
+    [key: string]: boolean;
   };
   setFormValue: Function;
   setFocus: Function;
@@ -25,7 +21,8 @@ export default function Text({
   setFormValue,
   setFocus,
 }: textareaProps) {
-  const hasFocus: boolean = focus.tag;
+  const hasFocus: boolean = focus[tag];
+  console.log(focus["tag"]);
 
   return (
     <div className={s.containerTextarea}>
