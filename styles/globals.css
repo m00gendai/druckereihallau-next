@@ -48,7 +48,6 @@ body {
   justify-content: center;
   align-items: flex-start;
   flex-wrap: wrap;
-  padding: 2rem 0 2rem 0;
 }
 
 .article{
@@ -58,12 +57,33 @@ body {
     justify-content: center;
     align-items: flex-start;
     flex-wrap: wrap;
-    padding: 2rem 0 2rem 0;
+    padding: 4rem 0;
+    border-bottom: 2px solid red;
+}
+
+.paddingBottom{
+  padding: 0 0 4rem 0;
+}
+
+.noBorder{
+  border: none;
 }
 
 p{
   width: 100%;
   margin: 0;
+}
+
+.marginTop{
+  margin: 2rem 0 0 0;
+}
+
+.marginBottom{
+  margin: 0 0 2rem 0;
+}
+
+.center{
+  text-align: center;
 }
 
 h1{
@@ -84,7 +104,6 @@ footer{
 .button {
   position: relative;
   width: 100%;
-  margin: 0 0 2rem 0;
   padding: 1rem;
   border: none;
   outline: none;
