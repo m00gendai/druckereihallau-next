@@ -5,15 +5,13 @@ interface inputProps {
   type: string;
   content: string;
   formValue: {
-    name: string;
-    mail: string;
-    message: string;
+    [key: string]: string;
   };
   focus: {
     [key: string]: boolean;
   };
   formValid: {
-    [key: string]: string;
+    [key: string]: boolean;
   };
   setFormValue: Function;
   setFocus: Function;

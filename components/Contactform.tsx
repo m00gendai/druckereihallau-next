@@ -14,9 +14,7 @@ export default function Contactform() {
   });
 
   interface isFormValue {
-    name: string;
-    mail: string;
-    message: string;
+    [key: string]: string;
   }
   const [formValue, setFormValue] = useState<isFormValue>({
     name: "",
@@ -25,9 +23,7 @@ export default function Contactform() {
   });
 
   interface isFormValid {
-    name: boolean;
-    mail: boolean;
-    message: boolean;
+    [key: string]: boolean;
   }
   const [formValid, setFormValid] = useState<isFormValid>({
     name: false,
