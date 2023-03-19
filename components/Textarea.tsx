@@ -25,7 +25,7 @@ export default function Text({
   setFormValue,
   setFocus,
 }: textareaProps) {
-  const hasFocus: boolean = focus[tag];
+  const hasFocus: boolean = focus.tag;
 
   return (
     <div className={s.containerTextarea}>
