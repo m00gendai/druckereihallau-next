@@ -5,9 +5,7 @@ import s from "@/styles/contactform.module.css";
 
 export default function Contactform() {
   interface isFocus {
-    name: boolean;
-    mail: boolean;
-    message: boolean;
+    [key: string]: boolean;
   }
   const [focus, setFocus] = useState<isFocus>({
     name: false,
