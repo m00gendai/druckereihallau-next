@@ -25,13 +25,15 @@ export default function Text({
   setFormValue,
   setFocus,
 }: textareaProps) {
+  const hasFocus: boolean = focus[tag];
+
   return (
     <div className={s.containerTextarea}>
       <label
         className={
-          focus[tag]
+          hasFocus
             ? s.labelActive
-            : formValue[tag] !== "" && !focus[tag]
+            : formValue[tag] !== "" && !hasFocus
             ? s.labelOk
             : s.labelPassive
         }
@@ -59,9 +61,9 @@ export default function Text({
           setFormValue({ ...formValue, [tag]: event.currentTarget.value })
         }
         className={
-          focus[tag]
+          hasFocus
             ? s.inputActive
-            : formValue[tag] !== "" && !focus[tag]
+            : formValue[tag] !== "" && !hasFocus
             ? s.inputOk
             : s.inputPassive
         }

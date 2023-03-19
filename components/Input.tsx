@@ -35,20 +35,22 @@ export default function Input({
   setFocus,
   setFormValid,
 }: inputProps) {
+  const hasFocus: boolean = focus[tag];
+
   return (
     <div className={s.containerInput}>
       <label
         className={
-          focus[tag]
+          hasFocus
             ? s.labelActive
             : formValue[tag] !== "" &&
               formValue[tag] !== undefined &&
-              !focus[tag] &&
+              !hasFocus &&
               formValid[tag]
             ? s.labelOk
             : formValue[tag] !== "" &&
               formValue[tag] !== undefined &&
-              !focus[tag] &&
+              !hasFocus &&
               !formValid[tag]
             ? s.labelNotOk
             : s.labelPassive
@@ -82,16 +84,16 @@ export default function Input({
           setFormValue({ ...formValue, [tag]: event.currentTarget.value })
         }
         className={
-          focus[tag]
+          hasFocus
             ? s.inputActive
             : formValue[tag] !== "" &&
               formValue[tag] !== undefined &&
-              !focus[tag] &&
+              !hasFocus &&
               formValid[tag]
             ? s.inputOk
             : formValue[tag] !== "" &&
               formValue[tag] !== undefined &&
-              !focus[tag] &&
+              !hasFocus &&
               !formValid[tag]
             ? s.inputNotOk
             : s.inputPassive
