@@ -47,7 +47,7 @@ export default function Contactform() {
     content: "",
   });
 
-  function handleSubmit(event) {
+  function handleSubmit(event: { preventDefault: () => void }) {
     event.preventDefault();
     if (feedbackVisible) {
       setFeedbackVisible(false);
@@ -61,12 +61,7 @@ export default function Contactform() {
   }
 
   return (
-    <form
-      className={s.form}
-      onSubmit={(event: React.ChangeEvent<HTMLInputElement>) =>
-        handleSubmit(event)
-      }
-    >
+    <form className={s.form} onSubmit={(event: any) => handleSubmit(event)}>
       <Input
         tag="name"
         type="text"
