@@ -66,7 +66,7 @@ export default function Spezialangebote() {
               ></div>
             </div>
           </article>
-          <article className="article">
+          <article className="article noBorder">
             <h1>Restposten: Papiere und Couverts</h1>
             <p>
               Wir verfügen über verschiedene Papiere zum Schreiben, Bedrucken
