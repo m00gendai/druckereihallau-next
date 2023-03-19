@@ -61,18 +61,20 @@ export default function Drucksachen() {
       />
       <main className="main">
         <section className="section">
-          <Link href="/kontakt" className="button">
-            Gerne erstellen wir Ihnen eine unverbindliche Offerte zu allen
-            erwähnten Drucksachen oder Dienstleistungen.
-          </Link>
-          <p>
-            Dazu benötigen wir allerdings konkrete Angaben wie Beschreibung des
-            Produktes, Auflage, Farbigkeit, Format, Papierwunsch, Dringlichkeit
-            und – besonders wichtig – Datenformate (PDF, Word, Excel, Tiff, EPS
-            usw.).
-          </p>
           <article className="article">
-            <p>
+            <Link href="/kontakt" className="button">
+              Gerne erstellen wir Ihnen eine unverbindliche Offerte zu allen
+              erwähnten Drucksachen oder Dienstleistungen.
+            </Link>
+            <p className="marginTop">
+              Dazu benötigen wir allerdings konkrete Angaben wie Beschreibung
+              des Produktes, Auflage, Farbigkeit, Format, Papierwunsch,
+              Dringlichkeit und – besonders wichtig – Datenformate (PDF, Word,
+              Excel, Tiff, EPS usw.).
+            </p>
+          </article>
+          <article className="article">
+            <p className="marginBottom">
               Wir gestalten, setzen, drucken und fertigen Drucksachen aller Art:
             </p>
             <div className={s.container}>
@@ -90,7 +92,9 @@ export default function Drucksachen() {
                 style={{ backgroundImage: `url("/drucksachen.jpg")` }}
               ></div>
             </div>
-            <p>Wir bieten...</p>
+          </article>
+          <article className="article">
+            <p className="marginBottom">Wir bieten...</p>
             <div className={s.container}>
               <ul>
                 {dienste.map((item, index) => {
@@ -106,7 +110,9 @@ export default function Drucksachen() {
                 style={{ backgroundImage: `url("/print.jpg")` }}
               ></div>
             </div>
-            <p>Wir können...</p>
+          </article>
+          <article className="article">
+            <p className="marginBottom">Wir können...</p>
             <div className={s.container}>
               <ul>
                 {skills.map((item, index) => {
@@ -122,10 +128,11 @@ export default function Drucksachen() {
                 style={{ backgroundImage: `url("/ringbinder.jpg")` }}
               ></div>
             </div>
-            <p>
+          </article>
+          <article className="article noBorder">
+            <p className="marginBottom">
               Insbesondere bieten wir eine allumfassende Beratung bei
-              Trauerfällen, mit Zirkularen, Karten, Couverts, Inserategestaltung
-              und-service.
+              Trauerfällen:
             </p>
             <div className={s.container}>
               <ul>
