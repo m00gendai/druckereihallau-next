@@ -63,7 +63,9 @@ export default function Contactform() {
   return (
     <form
       className={s.form}
-      onSubmit={(event: React.ChangeEvent<any>) => handleSubmit(event)}
+      onSubmit={(event: React.ChangeEvent<HTMLInputElement>) =>
+        handleSubmit(event)
+      }
     >
       <Input
         tag="name"
