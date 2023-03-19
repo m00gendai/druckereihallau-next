@@ -1,0 +1,131 @@
+.inputActive {
+  border: 2px solid blue;
+}
+.inputPassive {
+  border: 2px solid rgba(0, 0, 0, 1);
+}
+
+.inputOk {
+  border: 2px solid limegreen;
+}
+
+.inputNotOk {
+  border: 2px solid red;
+}
+
+.labelActive {
+  color: blue;
+  transform: translateY(-50%);
+  z-index: 4;
+}
+
+.labelPassive {
+  color: rgba(0, 0, 0, 0.3);
+  transform: translateY(50%);
+  z-index: 2;
+}
+
+.labelOk {
+  color: limegreen;
+  transform: translateY(-50%);
+  z-index: 4;
+}
+
+.labelNotOk {
+  color: red;
+  transform: translateY(-50%);
+  z-index: 4;
+}
+
+.form {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Arial';
+}
+
+.containerInput,
+.containerTextarea {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+}
+
+@media screen and (min-width: 500px) {
+  .containerInput {
+    width: calc(50% - 0.5rem);
+    margin: 0 0 2rem 0;
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .containerInput {
+    width: 100%;
+    margin: 0 0 2rem 0;
+  }
+}
+
+.containerTextarea {
+  width: 100%;
+  margin: 0 0 2rem 0;
+}
+
+.containerInput label,
+.containerTextarea label {
+  position: absolute;
+
+  top: 0;
+  left: 0.25rem;
+
+  transition: 0.5s;
+  background: white;
+  padding: 0 0.25rem 0 0.25rem;
+}
+
+.containerInput input,
+.containerTextarea textarea {
+  background: transparent;
+  outline: none;
+  z-index: 3;
+  padding: 0.5rem;
+  transition: 0.5s;
+  width: 100%;
+  box-shadow: 5px 5px 0px 0px black;
+  font-family: 'Arial';
+}
+
+.containerTextarea textarea {
+  min-height: 24ch;
+  resize: vertical;
+}
+
+.button {
+  width: 50%;
+  margin: 1rem auto 0 auto;
+  padding: 0.5rem;
+  border: none;
+  color: white;
+  background: red;
+  box-shadow: 5px 5px 0px 0px black;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.button:active {
+  transform: translate(3px, 3px);
+  box-shadow: 2px 2px 0px 0px black;
+}
+
+.feedback{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin: 2rem 0 0 0;
+}
