@@ -66,7 +66,6 @@ export default function Contactform() {
         tag="name"
         type="text"
         content="Name *"
-        pattern={undefined}
         formValue={formValue}
         focus={focus}
         formValid={formValid}
@@ -78,7 +77,6 @@ export default function Contactform() {
         tag="mail"
         type="email"
         content="E-Mail *"
-        pattern={undefined}
         formValue={formValue}
         focus={focus}
         formValid={formValid}
