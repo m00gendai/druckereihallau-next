@@ -1,7 +1,6 @@
 .link{
     position: relative;
     width: 100%;
-    text-align: center;
     text-decoration: none;
     margin: 1rem 0;
 }
@@ -9,10 +8,27 @@
 .iframe {
     position: relative;
     width: 100%;
-    aspect-ratio: 21/9;
-    border: 2px solid black;
-    box-shadow: 5px 5px 0px -1px black;
+    height: 100%;
     margin: 0;
     outline: 0;
     padding: 0;
+    border: 2px solid black;
+    box-shadow: 5px 5px 0px -1px black;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-gap: 1rem;
+    position: relative;
+    width: 100%;
+}
+
+.item{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
 }
