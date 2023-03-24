@@ -1,0 +1,125 @@
+.container{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.title{
+    position: relative;
+    width: 100%;
+}
+
+.spacer{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.inner{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    grid-gap: 2rem;
+    position: relative;
+    width: 100%;
+}
+
+.cover{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.image{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 100%;
+}
+
+.image img{
+    position: relative;
+    width: 100%;
+    border: 2px solid black;
+    box-shadow: 5px 5px 0px 0px black;
+}
+
+.content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.h2{
+    position: relative;
+    width: 100%;
+    text-align: right;
+    margin: 0 0 1rem 0;
+    border-bottom: 2px solid red;
+}
+
+.citation{
+    position: relative;
+    width: 100%;
+    text-align: right;
+    padding: 0;
+    margin: 0 0 2rem 0;
+    white-space:pre-line;
+    font-size: 0.75rem;
+}
+
+.tagline{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    color: red;
+}
+
+.description{
+    position: relative;
+    width: 100%;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    white-space: pre-line;
+    font-size: 1rem;
+}
+
+.testimonial{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    margin: 0 0 2rem 0;
+    color: red;
+}
+
+.price{
+    position: relative;
+    flex-grow: 1;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: center;
+}
+
+.sfr{
+    font-size: 2rem;
+}
