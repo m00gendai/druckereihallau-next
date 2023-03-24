@@ -1,0 +1,77 @@
+.nav{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 300;
+    min-height: 10vh;
+    flex-wrap: wrap;
+    border-bottom: 2px solid red;
+}
+
+.homeLink{
+    color: black;
+}
+
+.homeLinkLogo {
+    background-image: url("/logo.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    position: absolute;
+    top: 50%;
+    left:5vh;
+    transform: translateY(-50%);
+    height: 6vh;
+    aspect-ratio: 1/0.362;
+}
+
+.menu{
+    position: absolute;
+    top: 2.5vh;
+    right: 5vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.menu:hover{
+    cursor: pointer;
+}
+
+.linkContainer{
+    position: relative;
+    width: 80%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 5vh 0 5vh 0;
+}
+
+.subLinkContainer{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 0 0 0 1rem;
+}
+
+.link{
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    width: 100%;
+    border-bottom: 1px solid red;
+    padding: 0.25rem 0 0.25rem 0;
+    text-decoration: none;
+}
+
+.link:hover{
+    cursor: pointer;
+    background: rgba(255,255,255,0.1);
+}
