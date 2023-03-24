@@ -37,7 +37,7 @@ export default function Navbar_Mobile() {
     <nav className={s.nav}>
       {visible ? null : (
         <div className={s.homeLink}>
-          <Link className={s.homeLinkLogo} href="/"></Link>Druckerei Hallau
+          <Link className={s.homeLinkLogo} href="/"></Link>
         </div>
       )}
       <div className={s.menu} onClick={handleSubMenuTrigger}>
