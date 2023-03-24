@@ -35,10 +35,17 @@
 .imageSingle{
     position: relative;
     width: 100%;
-    aspect-ratio: 21/9;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     box-shadow: 5px 5px 0px 0px black;
     border: 2px solid black;
+}
+
+.widescreen{
+    aspect-ratio: 21/9;
+}
+
+.oldschool{
+    aspect-ratio: 4/3;
 }

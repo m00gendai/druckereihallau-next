@@ -1,8 +1,11 @@
 import Header from "@/components/Header";
 import Link from "next/link";
 import s from "@/styles/Drucksachen.module.css";
+import { useMediaQuery } from "@react-hook/media-query";
 
 export default function Drucksachen() {
+  const isMobile = useMediaQuery("only screen and (max-aspect-ratio: 13/9)");
+
   const drucksachen: string[] = [
     "Briefpapiere",
     "Flaschen-Etiketten",
@@ -88,7 +91,9 @@ export default function Drucksachen() {
                 })}
               </ul>
               <div
-                className={s.image}
+                className={`${s.image} ${
+                  isMobile ? s.oldschool : s.widescreen
+                }`}
                 style={{ backgroundImage: `url("/drucksachen.jpg")` }}
               ></div>
             </div>
@@ -106,7 +111,9 @@ export default function Drucksachen() {
                 })}
               </ul>
               <div
-                className={s.image}
+                className={`${s.image} ${
+                  isMobile ? s.oldschool : s.widescreen
+                }`}
                 style={{ backgroundImage: `url("/print.jpg")` }}
               ></div>
             </div>
@@ -124,7 +131,9 @@ export default function Drucksachen() {
                 })}
               </ul>
               <div
-                className={s.image}
+                className={`${s.image} ${
+                  isMobile ? s.oldschool : s.widescreen
+                }`}
                 style={{ backgroundImage: `url("/ringbinder.jpg")` }}
               ></div>
             </div>
@@ -145,7 +154,9 @@ export default function Drucksachen() {
                 })}
               </ul>
               <div
-                className={s.image}
+                className={`${s.image} ${
+                  isMobile ? s.oldschool : s.widescreen
+                }`}
                 style={{ backgroundImage: `url("/grief.jpg")` }}
               ></div>
             </div>

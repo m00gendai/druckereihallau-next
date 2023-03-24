@@ -1,7 +1,10 @@
 import Header from "@/components/Header";
 import s from "@/styles/Spezialangebote.module.css";
+import { useMediaQuery } from "@react-hook/media-query";
 
 export default function Spezialangebote() {
+  const isMobile = useMediaQuery("only screen and (max-aspect-ratio: 13/9)");
+
   return (
     <>
       <Header
@@ -35,7 +38,9 @@ export default function Spezialangebote() {
             </div>
             <div className={s.containerSingle}>
               <div
-                className={s.imageSingle}
+                className={`${s.imageSingle} ${
+                  isMobile ? s.oldschool : s.widescreen
+                }`}
                 style={{ backgroundImage: `url("/postkarten.jpg")` }}
               ></div>
             </div>
@@ -48,7 +53,9 @@ export default function Spezialangebote() {
             </p>
             <div className={s.containerSingle}>
               <div
-                className={s.imageSingle}
+                className={`${s.imageSingle} ${
+                  isMobile ? s.oldschool : s.widescreen
+                }`}
                 style={{ backgroundImage: `url("/notitz.jpg")` }}
               ></div>
             </div>
@@ -61,7 +68,9 @@ export default function Spezialangebote() {
             </p>
             <div className={s.containerSingle}>
               <div
-                className={s.imageSingle}
+                className={`${s.imageSingle} ${
+                  isMobile ? s.oldschool : s.widescreen
+                }`}
                 style={{ backgroundImage: `url("/books.jpg")` }}
               ></div>
             </div>
@@ -74,7 +83,9 @@ export default function Spezialangebote() {
             </p>
             <div className={s.containerSingle}>
               <div
-                className={s.imageSingle}
+                className={`${s.imageSingle} ${
+                  isMobile ? s.oldschool : s.widescreen
+                }`}
                 style={{ backgroundImage: `url("/rest.jpg")` }}
               ></div>
             </div>

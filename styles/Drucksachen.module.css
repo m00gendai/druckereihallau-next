@@ -1,10 +1,9 @@
 .container{
     position: relative;
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 2rem;
 }
 
 .container:last-child{
@@ -25,8 +24,15 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    width: 50%;
-    aspect-ratio: 21/9;
+    width: 100%;
     box-shadow: 5px 5px 0px 0px black;
     border: 2px solid black;
+}
+
+.widescreen{
+    aspect-ratio: 21/9;
+}
+
+.oldschool{
+    aspect-ratio: 4/3;
 }
