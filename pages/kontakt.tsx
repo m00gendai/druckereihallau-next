@@ -16,23 +16,31 @@ export default function Kontakt() {
           <article className="article">
             <div className={s.container}>
               <div className={`${s.item}`}>
-                <p>
+                <p style={{ margin: "0 0 1rem 0" }}>
                   Öffnungszeiten: <br />
                   Montag bis Freitag 8:00 bis 12:00 und 14:00 bis 17:30 <br />
                   Terminvereinbarungen ausserhalb der Öffnungszeiten möglich
                 </p>
-                <a className={s.link} href="tel:+41526813129">
-                  Tel 052 681 31 29
-                </a>
-                <a className={s.link} href="fax:+41526814006">
-                  Fax 052 681 40 06
-                </a>
-                <a className={s.link} href="mailto:druck.hallau@datacomm.ch">
-                  druck.hallau@datacomm.ch
-                </a>
-                <Link className={s.link} href="https://druckereihallau.ch">
-                  www.druckereihallau.ch
-                </Link>
+                <p style={{ margin: "0 0 1rem 0" }}>
+                  <a className={s.link} href="tel:+41526813129">
+                    Tel 052 681 31 29
+                  </a>
+                </p>
+                <p style={{ margin: "0 0 1rem 0" }}>
+                  <a className={s.link} href="fax:+41526814006">
+                    Fax 052 681 40 06
+                  </a>
+                </p>
+                <p style={{ margin: "0 0 1rem 0" }}>
+                  <a className={s.link} href="mailto:druck.hallau@datacomm.ch">
+                    druck.hallau@datacomm.ch
+                  </a>
+                </p>
+                <p>
+                  <Link className={s.link} href="https://druckereihallau.ch">
+                    www.druckereihallau.ch
+                  </Link>
+                </p>
               </div>
               <div className={s.item}>
                 <iframe
