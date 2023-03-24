@@ -74,9 +74,9 @@ export default function Drucksachen() {
             </p>
           </article>
           <article className="article">
-            <p className="marginBottom">
+            <h1>
               Wir gestalten, setzen, drucken und fertigen Drucksachen aller Art:
-            </p>
+            </h1>
             <div className={s.container}>
               <ul>
                 {drucksachen.map((item, index) => {
@@ -94,7 +94,7 @@ export default function Drucksachen() {
             </div>
           </article>
           <article className="article">
-            <p className="marginBottom">Wir bieten...</p>
+            <h1>Wir bieten...</h1>
             <div className={s.container}>
               <ul>
                 {dienste.map((item, index) => {
@@ -112,7 +112,7 @@ export default function Drucksachen() {
             </div>
           </article>
           <article className="article">
-            <p className="marginBottom">Wir können...</p>
+            <h1>Wir können...</h1>
             <div className={s.container}>
               <ul>
                 {skills.map((item, index) => {
@@ -130,10 +130,10 @@ export default function Drucksachen() {
             </div>
           </article>
           <article className="article noBorder">
-            <p className="marginBottom">
+            <h1>
               Insbesondere bieten wir eine allumfassende Beratung bei
               Trauerfällen:
-            </p>
+            </h1>
             <div className={s.container}>
               <ul>
                 {grief.map((item, index) => {
