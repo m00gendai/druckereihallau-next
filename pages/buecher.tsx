@@ -81,13 +81,13 @@ export default function Books() {
       />
       <main className="main">
         <section className="section">
-          <article className="article">
+          <article className="article" id="hallau">
             <Book {...book1} />
           </article>
-          <article className="article">
+          <article className="article" id="gass">
             <Book {...book2} />
           </article>
-          <article className="article noBorder">
+          <article className="article noBorder" id="alltaegliches">
             <Book {...book3} />
           </article>
         </section>
