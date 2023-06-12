@@ -51,6 +51,7 @@ export default function Kontakt() {
             </div>
           </article>
           <article className="article noBorder">
+            <p>Möchten Sie ein Buch bestellen oder haben eine Anfrage an uns, so benutzen Sie unser Kontaktformular.</p>
             <Contactform />
           </article>
         </section>
