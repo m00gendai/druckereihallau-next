@@ -48,10 +48,33 @@ export default function Contactform() {
     }
     setFeedbackVisible(true);
     setFeedback({ color: "red", content: "Einen Augenment bitte..." });
-    setTimeout(function () {
-      setFeedback({ color: "limegreen", content: "Jop, jut" });
-    }, 1000);
-    console.log(formValue);
+
+    fetch("/api/contact", {
+      method: 'POST',
+      headers: {
+        'Accept': 'application/json, text/plain, */*',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(formValue)
+    }).then(async (res) => {
+
+        if (res.status === 200) {
+            setFeedback({color: "lime", content: "Nachricht erfolgreich übermittelt. Sie haben auch eine Kopie erhalten."})
+            
+            setFeedbackVisible(true) 
+        } else {
+            const errmsg = await res.json()
+            setFeedback({color: "red", content:`
+                Es ist etwas schiefgegangen. Bitte überprüfen Sie insbesondere Ihre angegebene E-Mail-Adresse. Ansonsten wenden SIe sich an die im Impressum angegebene Kontaktmöglichkeit.
+                
+
+                Fehler: ${res.status} 
+                Meldung ${errmsg.err}
+            `})
+            
+            setFeedbackVisible(true) 
+        }
+    })
   }
 
   return (
