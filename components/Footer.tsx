@@ -42,6 +42,12 @@ export default function Footer() {
           <Link className={s.link} href="/kontakt">
             Kontakt
           </Link>
+          <Link className={s.link} href="/impressum">
+            Impressum
+          </Link>
+          <Link className={s.link} href="/datenschutz">
+            Datenschutz
+          </Link>
         </nav>
       )}
     </footer>
