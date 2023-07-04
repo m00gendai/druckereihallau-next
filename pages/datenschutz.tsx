@@ -3,7 +3,7 @@ export default function Datenschutz(){
         <>
         <main className="main">
             <section className="section">
-                <article className="article">
+                <article className="article">{`
                
 Vertretungsberechtigte Personen
 
@@ -211,7 +211,7 @@ Haftungsansprüche gegen den Autor wegen Schäden materieller oder immaterieller
 Alle Angebote sind freibleibend. Der Autor behält es sich ausdrücklich vor, Teile der Seiten oder das gesamte Angebot ohne gesonderte Ankündigung zu verändern, zu ergänzen, zu löschen oder die Veröffentlichung zeitweise oder endgültig einzustellen.
 Quelle
 
-https://brainbox.swiss/
+https://brainbox.swiss/`}
                 </article>
             </section>
         </main>
