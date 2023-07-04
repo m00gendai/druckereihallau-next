@@ -1,0 +1,60 @@
+.bar{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 2px solid black;
+    background: white;
+    display: flex;
+    jsutify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.inner{
+    position: relative;
+    background: white;
+    margin: 1rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.link{
+    margin: 0 1rem;
+}
+
+.buttons{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    margin: 1rem 0;
+}
+
+.button {
+    position: relative;
+    padding: 0.25rem;
+    border: none;
+    outline: none;
+    font-size: 1.25rem;
+    border: 2px solid black;
+    box-shadow: 5px 5px 0px -1px black;
+    text-decoration: none;
+    color: white;
+    margin: 0 1rem;
+  }
+  
+  .button:hover{
+    cursor: pointer;
+  }
+  
+  .button:active {
+    transform: translate(3px, 3px);
+    box-shadow: 2px 2px 0px 0px black;
+  }
+
+  .yes{
+    background: green;
+  }
+
+  .no{
+    background: red;
+  }
