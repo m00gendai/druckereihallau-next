@@ -25,8 +25,7 @@ export default function Footer() {
         <p>Terminvereinbarungen ausserhalb der Öffnungszeiten möglich</p>
         <p>{`© 2017-${currentYear} Druckerei Hallau`}</p>
       </div>
-      {isMobile ? null : (
-        <nav className={`${s.menu} ${"right"}`}>
+        <nav className={`${s.menu} ${isMobile ? "center" : "right"}`}>
           <Link className={s.link} href="/">
             Home
           </Link>
@@ -49,7 +48,7 @@ export default function Footer() {
             Datenschutz
           </Link>
         </nav>
-      )}
+      
     </footer>
   );
 }
