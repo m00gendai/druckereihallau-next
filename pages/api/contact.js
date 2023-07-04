@@ -24,9 +24,8 @@ export default async function (req, res) {
     
   const mailData = {
       from: req.body.mail,
-      to: `info@druckereihallau.ch`,
+      to: `druck.hallau@datacomm.ch`,
       cc: req.body.mail,
-      bcc: `mrweber@gmx.ch`,
       subject: `Nachricht von ${req.body.name}`,
       text: req.body.message,
       html: `<div>${req.body.message}</div>`
