@@ -1,0 +1,38 @@
+.tile{
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid black;
+    box-shadow: 5px 5px 0px -1px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner{
+    position: relative;
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.title{
+    position: relative;
+    width: 100%;
+}
+
+.text{
+    position: relative;
+    width: 100%;
+    margin: 0 0 2rem 0;
+    white-space: pre-line;
+    text-align: left;
+}
+
+.link{
+    position: relative;
+    width: 100%;
+    margin: -2rem 0 2rem 0;
+}
