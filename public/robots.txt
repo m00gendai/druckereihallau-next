@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://druckereihallau.ch
+
+# Sitemaps
+Sitemap: https://druckereihallau.ch/sitemap.xml
