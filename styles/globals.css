@@ -98,6 +98,18 @@ h1{
   font-size: 2rem;
 }
 
+h3{
+  position: relative;
+  width: 100%;
+}
+
+p strong {
+  position: relative;
+  width: 100%;
+  display: flex;
+  margin: 2rem 0 0 0;
+}
+
 footer{
   padding: 2rem;
   position: relative;
