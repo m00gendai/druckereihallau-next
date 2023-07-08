@@ -11,7 +11,7 @@ export default function Error(){
     return(
         <main className="main">
             <section className="section">
-                <article className="article">
+                <article className="article noBorder">
                 <h1 className="title">Oha!</h1>
                 <div style={text}>
     {`Diçka shkoi keq, kjo faqe nuk ekziston.
