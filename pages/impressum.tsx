@@ -51,7 +51,7 @@ export default function Impressum({imprint}:ImprintProps){
             <article className="article">
             <div className={s.tileContainer}>
             {data[0].tiles.map(tile=>{
-              return <ImprintTile title={tile.title} content={tile.address} url={tile.url}/>
+              return <ImprintTile key={tile._id} title={tile.title} content={tile.address} url={tile.url}/>
               })
             }
             </div>
