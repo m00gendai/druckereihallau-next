@@ -1,3 +1,5 @@
+import s from "@/styles/Dsgvo.module.css"
+
 interface Dsgvo_chapter{
     title: string;
     content: string;
@@ -31,9 +33,9 @@ export default function Datenschutz({dsgvo}:DatenschutzProps){
             <section className="section">
                 {data[0].chapter.map((item, index) =>{
                         return(
-                            <article className="article" key={`${item.title}_${index}`}>
+                            <article className={`article ${index === data[0].chapter.length-1 ? "noBorder" : ""}`} key={`${item.title}_${index}`}>
                                 <h3 style={{wordBreak: "break-all"}}>{item.title}</h3>
-                                <div dangerouslySetInnerHTML={{__html: item.content}}></div>
+                                <div className={s.text} dangerouslySetInnerHTML={{__html: item.content}}></div>
                             </article>
                         )
                     })}
