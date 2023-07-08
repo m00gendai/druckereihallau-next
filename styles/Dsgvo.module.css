@@ -1,0 +1,20 @@
+.container{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item{
+    position: relative;
+    width: 100%;
+}
+
+.item:nth-last-child(n+2){
+    border: none;
+}
+
+.text{
+    position: relative;
+    width: 100%;
+}
