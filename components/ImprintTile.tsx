@@ -16,7 +16,7 @@ export default function ImprintTile({title, content, url}:TileProps){
                 </h3>
                 <div className={s.text} dangerouslySetInnerHTML={{__html: content}}>
                 </div>
-                <Link className={s.link} href={url} target="_blank">{url}</Link>
+                {url === null ? null  : <Link className={s.link} href={url} target="_blank">{url}</Link>}
             </div>
         </div>
     )
