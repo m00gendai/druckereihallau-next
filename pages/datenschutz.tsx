@@ -25,7 +25,6 @@ export default function Datenschutz({dsgvo}:DatenschutzProps){
         return id._id === "ee618d656637656b8c000342"
       })
 
-console.log(dsgvo)
     return(
         <>
         <main className="main">
